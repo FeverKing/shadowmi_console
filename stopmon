@@ -1,0 +1,2 @@
+#!/bin/bash
+su -c "ip link set wlan0 down; echo 0 > /sys/module/wlan/parameters/con_mode;ip link set wlan0 up; svc wifi enable"
