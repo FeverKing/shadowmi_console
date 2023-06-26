@@ -56,9 +56,11 @@ def show_main_menu(initstart=False):
     if select == "5":
         conf_tunnel()
     if select == "6":
-        conf_tunnel()
+        input("press enter to continue...")
+        show_main_menu()
     if select == "7":
-        conf_tunnel()
+        input("press enter to continue...")
+        show_main_menu()
     if select == "8":
         os.system("adb shell am force-stop com.tool.location")
         os.system("adb shell am force-stop com.chartcross.gpstest")
